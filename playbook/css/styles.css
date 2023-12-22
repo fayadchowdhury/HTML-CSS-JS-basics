@@ -1,0 +1,18 @@
+body {
+    background-color: aquamarine;
+}
+
+hr {
+    border-style: none;
+    background-color: white;
+    height: 3px;
+    width: 40%; /* instead of doing hardcoded pixel values for height, width etc. it is also possible to do percentages so that they scale with the size of the window */
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: blue;
+}
