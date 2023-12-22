@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook</title>
+</head>
+
+<body>
+    <h1>This is an H1 tag</h1>
+    <h2>This is an H2 tag</h2>
+    <h3>This is an H3 tag</h3>
+    <h4>This is an H4 tag</h4>
+    <h5>This is an H5 tag</h5>
+    <h6>This is an H6 tag</h6>
+    <hr>
+    <h1>These are self-closing tags</h1>
+    <p>Self-closing tags do not need a separate closing tag; they sort of close themselves</p>
+    <ul>
+        <li>br</li>
+        <li>hr</li>
+        <li>img</li>
+        <li>input</li>
+    </ul>
+    <hr>
+    <h1>These are tags that need to be closed</h1>
+    <p>These need to be opened and closed</p>
+    <ul>
+        <li>h1, 2, 3, 4, 5, 6</li>
+        <li>p</li>
+        <li>ul, ol</li>
+        <li>li</li>
+        <li>div</li>
+        <li>em</li>
+        <li>i</li>
+        <li>strong</li>
+        <li>a</li>
+        <li>table, tr, td</li>
+    </ul>
+    <hr>
+    <p>This is an example of how to do an image with an alt-text tag</p>
+    <img src="resources/cat.jpeg" alt="cat-image">
+    <p>It is also possible to do a URL inside the src attribute to fetch directly from the internet</p>
+    <hr>
+    <p>This is an example of an anchor tag using a and the href attribute</p>
+    <a href="https://www.google.com">Link to Google!</a>
+    <p>It is also possible to link to another page in the local directory</p>
+    <a href="sample-page.html">Link to sample page!</a>
+    <hr>
+    <p>It may be a good idea to use tables to do aligned but also separated content</p>
+    <p>Each table has multiple table rows, tr, and each table row has multiple table data, td, (that are inserted horizontally)</p>
+    <p>Tables may also have a table head, thead, with table head, th elements instead of table row with td elements</p>
+    <p>They may also have a table footer, tfoot, with table foot, tf elements instead of table row with td elements</p>
+    <p>Best practice is to separate column names into thead, data into tbody and footer into tfoot</p>
+    <table border="1"> <!-- Not recommended to style using HTML--> 
+        <thead>
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+        </thead>
+        <tbody>
+            <tr> 
+                <td>Cell 1,1</td>
+                <td>Cell 1,2</td>
+                <td>Cell 1,3</td>
+            </tr>
+            <tr> 
+                <td>Cell 2,1</td>
+                <td>Cell 2,2</td>
+                <td>Cell 2,3</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>It is also possible to nest tables within tables but that is not really recommended</p>
+    <table border="1">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>table 1 cell 1, 1</td>
+                        <td>table 1 cell 1, 2</td>
+                    </tr>
+                    <tr>
+                        <td>table 1 cell 2, 1</td>
+                        <td>table 1 cell 2, 2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>table 2 cell 1, 1</td>
+                        <td>table 2 cell 1, 2</td>
+                    </tr>
+                    <tr>
+                        <td>table 2 cell 2, 1</td>
+                        <td>table 2 cell 2, 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <p>HTML forms are a very important part of websites</p>
+    <p>They usually consist of labels, inputs</p>
+    <form>
+        <label for="input-1">Input 1</label> <!-- labels are like textbox identifiers, identified by the for attribute -->
+        <input id="input-1" type="text"> <!-- inputs are like the textboxes themselves (or the submit button too) -->
+        <input type="color"> <!-- this creates a color picker -->
+        <input type="submit"> <!-- this creates a submit button -->
+        <!-- Generally the type attribute for the input tag determines the kind of input it will take -->
+        <!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types -->
+        <!-- Common types include text, numeric, password, email, checkbox, file, radio etc. -->
+        <textarea rows="10" columns="80"></textarea> <!-- creates a text box that is 10 units tall and 80 units wide by default but can be resized -->
+    </form>
+</body>
+</html>
