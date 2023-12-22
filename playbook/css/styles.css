@@ -16,3 +16,12 @@ h1 {
 h2 {
     color: blue;
 }
+
+/* CSS Syntax */
+/* selector { property: value; } */
+/* Each property: value line is called a rule */
+
+/* There are different kinds of selectors */
+/* tag selectors - tag {} */
+/* class selectors - .classname {} */
+/* id selectors - #id {} (ID must be unique to pages) */
