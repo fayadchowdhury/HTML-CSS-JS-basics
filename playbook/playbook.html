@@ -5,9 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playbook</title>
+
+    <!-- It is also possible to do internal CSS by specifying changes to be made within style tags in the head section of the HTML page -->
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        hr {
+            border-style: none;
+            background-color: white;
+            height: 3px;
+            width: 40%; /* instead of doing hardcoded pixel values for height, width etc. it is also possible to do percentages so that they scale with the size of the window */
+        }
+    </style>
+
 </head>
 
-<body style="background-color: red;"> <!-- this is inline CSS to convert the background of the body element to red -->
+<!-- <body style="background-color: red;"> this is inline CSS to convert the background of the body element to red -->
+<body>
     <h1>This is an H1 tag</h1>
     <h2>This is an H2 tag</h2>
     <h3>This is an H3 tag</h3>
