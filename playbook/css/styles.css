@@ -17,6 +17,24 @@ h2 {
     color: blue;
 }
 
+.p-block {
+    display: block;
+    background-color: blanchedalmond;
+    width: 30%; /* setting the width here works because it is a block element */
+}
+
+.p-inline {
+    display: inline;
+    background-color: blanchedalmond;
+    /* width: 30%; doesn't work */
+}
+
+.p-inline-block {
+    display: inline-block;
+    background-color: blanchedalmond;
+    width: 60%;
+}
+
 /* CSS Syntax */
 /* selector { property: value; } */
 /* Each property: value line is called a rule */
