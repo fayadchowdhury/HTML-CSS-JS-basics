@@ -35,6 +35,32 @@ h2 {
     width: 60%;
 }
 
+#static-position {
+    position: static;
+    background-color: aliceblue;
+}
+
+#relative-position {
+    background-color: aliceblue;
+    position: relative;
+    left: 30px; /* moves the element 30px from the left of where it should actually have been */
+    top: 5px; /* moves the element 5px from the top of where it should actually have been */
+    /* also possible to set bottom and right */
+}
+
+#absolute-position {
+    background-color: aliceblue;
+    position: absolute;
+    right: 30px; /* moves the element 30px from the right edge of the closest parent with relative positioning */
+    /* top: 50px; sends the element wayyyyy up, 50px from the very top of the closest parent with relative positioning */
+}
+
+#fixed-position {
+    background-color: aliceblue;
+    position: fixed;
+    bottom: 20px; /* fixes the position to 20px from the bottom of the screen */
+}
+
 /* CSS Syntax */
 /* selector { property: value; } */
 /* Each property: value line is called a rule */
