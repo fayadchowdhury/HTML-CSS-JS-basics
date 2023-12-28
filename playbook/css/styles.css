@@ -1,5 +1,6 @@
 body {
     background-color: aquamarine;
+    font-family: sans-serif; /* sets the font in all elements within the body element to default Arial sans-serif */
 }
 
 hr {
@@ -11,6 +12,7 @@ hr {
 
 h1 {
     color: white;
+    font-family: serif; /* this overrides the body font-family property */
 }
 
 h2 {
