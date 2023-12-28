@@ -171,12 +171,22 @@
         <li>Children sit on top of parents; elements nested within other elements will sit on those elements (concept of z-index)</li>
     </ul>
     <p>It is also possible to set the position CSS property of the element to have it appear positioned differently than the default.</p>
-    <p>Common posiion values include</p>
+    <p>Common position values include</p>
     <ul>
         <li id="static-position">static - Static positioning basically tells the browser to place the element as it would be without the property defined</li>
         <li id="relative-position">relative - Relative positioning requires us to specify the TBRL positioning from the default position and does not affect the position of other elements on the screen</li>
         <li id="absolute-position">absolute - With absolute positioning, we specify the position with respect to the parent element. It does however affect the natural flow of the elements as specified in the HTML code.</li>
         <li id="fixed-position">fixed - With fixed positioning, we specify a fixed position for the element on the screen. Used to achieve sticky effect; element stays in same position on screen even when scrolled.</li>
     </ul>
+    <hr>
+    <div class="centering">
+        <p>Centering elements is usually done by setting text-align to center for the parent's CSS.</p>
+        <p>This centers the nested elements with respect to the parent.</p>
+        <p>However, this works only with full-width block and inline-block elements.</p>
+        <p class="p-block">Therefore this is not really centered.</p>
+        <p class="p-block">And neither is this.</p>
+        <p>With elements that are not full-width block elements, it is possible to center them using the margin property by setting it to auto.</p>
+        <p class="p-block-centered">Like so.</p>
+    </div>
 </body>
 </html>

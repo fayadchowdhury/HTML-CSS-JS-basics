@@ -23,6 +23,13 @@ h2 {
     width: 30%; /* setting the width here works because it is a block element */
 }
 
+.p-block-centered {
+    display: block;
+    background-color: blanchedalmond;
+    width: 30%; /* setting the width here works because it is a block element */
+    margin: 0 auto 0 auto;
+}
+
 .p-inline {
     display: inline;
     background-color: blanchedalmond;
@@ -59,6 +66,11 @@ h2 {
     background-color: aliceblue;
     position: fixed;
     bottom: 20px; /* fixes the position to 20px from the bottom of the screen */
+}
+
+.centering {
+    width: 300px;
+    text-align: center;
 }
 
 /* CSS Syntax */
