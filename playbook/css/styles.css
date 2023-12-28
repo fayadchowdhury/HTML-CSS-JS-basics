@@ -1,6 +1,6 @@
 body {
     background-color: aquamarine;
-    font-family: sans-serif; /* sets the font in all elements within the body element to default Arial sans-serif */
+    /* font-family: sans-serif; sets the font in all elements within the body element to default Arial sans-serif */
 }
 
 hr {
@@ -73,6 +73,14 @@ h2 {
 .centering {
     width: 300px;
     text-align: center;
+}
+
+.new-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* defines a series of fallback fonts to try and render if the previous one is not available; refer to cssfontstack.com */
+}
+
+.embedded-font {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* CSS Syntax */
