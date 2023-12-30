@@ -8,7 +8,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- Bootstrap JS CDN -->
 </head>
 <body>
-    <h1>This is where we experiment with bootstrap!</h1>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bootstrap</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NavItem1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NavItem2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NavItem3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p>I am not wrapping everything in container divs to show the effect of the different widths</p>
+    <h1>Containers</h1>
+    <hr>
+    <div class="container-fluid">
+        <p>It's important to have most elements in divs and assign the container, container-{breakpoint} or container-fluid class to the div</p>
+        <ul>
+            <li class="container bg-info mt-3 mb-3">
+                container - With the container class, the container has a max-width at each responsive breakpoint
+            </li>
+            <li class="container-md bg-info mt-3 mb-3">
+                container-{breakpoint} - With the container-{breakpoint} class, the container has a max-width until the specified breakpoint; breakpoints are sm, md, lg, xl, xxl
+            </li>
+            <li class="container-fluid bg-info mt-3 mb-3">
+                container-fluid - With the container-fluid class, the container has max-width always
+            </li>
+        </ul>
+        <p>An easier to way to understand that is with this image from <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-containers.php">tutorialrepublic</a></p>
+        <img class="img-fluid" alt-text="container-breakpoints" src="resources/container-breakpoints.png">
+    </div>
     <hr>
     <a href="https://getbootstrap.com/docs/5.3/examples/cheatsheet">Cheatsheet</a>
     <br>
