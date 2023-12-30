@@ -77,6 +77,8 @@ h2 {
 
 .new-font {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* defines a series of fallback fonts to try and render if the previous one is not available; refer to cssfontstack.com */
+    color: white; /* changes font colour */
+    font-weight: 900; /* changs font weight */
 }
 
 .embedded-font {
