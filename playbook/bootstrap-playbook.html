@@ -43,6 +43,60 @@
         <p>An easier to way to understand that is with this image from <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-containers.php">tutorialrepublic</a></p>
         <img class="img-fluid" alt-text="container-breakpoints" src="resources/container-breakpoints.png">
     </div>
+    <div class="container-fluid">
+        <p>It is possible to do multi-column layouts in bootstrap with different {breakpoint}-{numColumns} divs within rows; the numbers have to be add up to 12</p>
+        <p>It is also possible to responsively design it such that at different breakpoints there are different numbers of columns</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 bg-info mt-3">
+                <p>Column 1 in large viewfinders</p>
+            </div>
+            <div class="col-lg-3 col-md-6 bg-info mt-3">
+                <p>Column 2 in large viewfinders</p>
+            </div>
+            <div class="col-lg-3 col-md-12 bg-info mt-3">
+                <p>Column 3 in large viewfinders</p>
+            </div>
+        </div>
+        <p>With margins the total sum of the numbers horizontally has to add up to 12</p>
+        <p>While the above worked as intended, if we include some horizontal margins, we see different behaviour</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 bg-info mt-3 mx-1">
+                <p>Column 1 in large viewfinders</p>
+            </div>
+            <div class="col-lg-3 col-md-6 bg-info mt-3 mx-1">
+                <p>Column 2 in large viewfinders</p>
+            </div>
+            <div class="col-lg-3 col-md-12 bg-info mt-3 mx-1">
+                <p>Column 3 in large viewfinders</p>
+            </div>
+        </div>
+        <p>It is also possible to do col-{breakpoint}-auto to size columns to fit the natural width of their content</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 bg-info mt-3 mx-1">
+                <p>Column 1 in large viewfinders</p>
+            </div>
+            <div class="col-lg-auto col-md-auto bg-info mt-3 mx-1">
+                <p>Column 2 in large viewfinders</p>
+            </div>
+            <div class="col-lg-3 col-md-12 bg-info mt-3 mx-1">
+                <p>Column 3 in large viewfinders</p>
+            </div>
+        </div>
+        <p>It is also possible to nest columns in different rows of the grid</p>
+        <div class="row">
+            <div class="col-sm-8 bg-info">Left column</div>
+            <div class="col-sm-4 bg-success">
+                <!--Column right with nested rows and columns-->
+                <div class="row">
+                    <div class="col-12 bg-success">Row 1 of right column</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 bg-danger">Row 2 column 1 of right column</div>
+                    <div class="col-6 bg-secondary">Row 2 column 2 of right column</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <hr>
     <a href="https://getbootstrap.com/docs/5.3/examples/cheatsheet">Cheatsheet</a>
     <br>
