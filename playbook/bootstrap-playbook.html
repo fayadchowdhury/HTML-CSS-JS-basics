@@ -48,13 +48,13 @@
         <p>It is also possible to responsively design it such that at different breakpoints there are different numbers of columns</p>
         <div class="row">
             <div class="col-lg-3 col-md-6 bg-info mt-3">
-                <p>Column 1 in large viewfinders</p>
+                <p>Column 1 in large viewport</p>
             </div>
             <div class="col-lg-3 col-md-6 bg-info mt-3">
-                <p>Column 2 in large viewfinders</p>
+                <p>Column 2 in large viewport</p>
             </div>
             <div class="col-lg-3 col-md-12 bg-info mt-3">
-                <p>Column 3 in large viewfinders</p>
+                <p>Column 3 in large viewport</p>
             </div>
         </div>
         <p>With margins the total sum of the numbers horizontally has to add up to 12</p>
@@ -94,6 +94,56 @@
                     <div class="col-6 bg-danger">Row 2 column 1 of right column</div>
                     <div class="col-6 bg-secondary">Row 2 column 2 of right column</div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <p>Bootstrap also takes care of headings</p>
+        <h1>h1. Bootstrap heading</h1>
+        <h2>h2. Bootstrap heading</h2>
+        <h3>h3. Bootstrap heading</h3>
+        <h4>h4. Bootstrap heading</h4>
+        <h5>h5. Bootstrap heading</h5>
+        <h6>h6. Bootstrap heading</h6>
+    </div>
+    <div class="container-fluid">
+        <p>It is possible to align text using bootstrap classes</p>
+        <p class="text-start">Left aligned text on all viewport sizes.</p>
+        <p class="text-center">Center aligned text on all viewport sizes.</p>
+        <p class="text-end">Right aligned text on all viewport sizes.</p>
+        <p>It is also possible to align text based on viewport breakpoints/sizes</p>
+        <p class="text-sm-center">Text will be center aligned on small sized (sm) viewports and up.</p>
+        <p class="text-md-center">Text will be center aligned on medium sized (md) viewports and up.</p>
+        <p class="text-lg-center">Text will be center aligned on large sized (lg) viewports and up.</p>
+        <p class="text-xl-center">Text will be center aligned on extra-large sized (xl) viewports and up.</p>
+    </div> 
+    <div class="container-fluid">
+        <p>It is possible to align text using bootstrap classes</p>
+        <p class="text-primary">Primary: Please read the instructions carefully before proceeding.</p>
+        <p class="text-secondary">Secondary: This is featured has been removed from the latest version.</p>
+        <p class="text-success">Success: Your message has been sent successfully.</p>
+        <p class="text-info">Info: You must agree with the terms and conditions to complete the sign up process.</p>
+        <p class="text-warning">Warning: There was a problem with your network connection.</p>
+        <p class="text-danger">Danger: An error has been occurred while submitting your data.</p>
+        <p class="text-muted">Muted: This paragraph of text is grayed out.</p>
+    </div>
+    <div class="container-fluid">
+        <p>It is possible to truncate, text wrap text in bootstrap after specifying the width or the number of cols and then assigning pre-defined classes</p>
+        <div class="row">
+            <div class="col-2 bg-info">
+                <p class="text-truncate">For block-level elements, it is possible to just use the text-truncate class to truncate text</p>
+            </div>
+            <div class="d-inline-block bg-success" style="max-width: 200px">
+                <p class="text-truncate">For inline elements, you have to define the width of the element and then use the text-truncate class to truncate text</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2 bg-info">
+                <p class="text-wrap">For block-level elements, it is possible to wrap text using the text-wrap class</p>
+            </div>
+            <div class="d-inline-block bg-success" style="max-width: 200px">
+                <p class="text-wrap">For inline elements, you have to define the width of the element and then use the text-wrap class to wrap text</p>
             </div>
         </div>
     </div>
